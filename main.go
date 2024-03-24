@@ -19,6 +19,7 @@ func main() {
 				"sex":  true,
 				"like": []string{"吃饭", "觅爱", "学习", "健身", "冥想", "疯了"},
 				"age":  26.3,
+				"want": "my wife",
 			},
 		})
 	})
