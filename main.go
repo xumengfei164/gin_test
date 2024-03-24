@@ -1,10 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	fmt.Println("in my branch")
 	server := gin.Default()
 	server.LoadHTMLGlob("template/*")
 	server.PUT("/tt", func(context *gin.Context) {
@@ -15,8 +17,8 @@ func main() {
 			"info": gin.H{
 				"name": "徐梦飞",
 				"sex":  true,
-				"like": []string{"吃饭", "觅爱", "学习", "健身"},
-				"age":  25.3,
+				"like": []string{"吃饭", "觅爱", "学习", "健身", "冥想", "疯了"},
+				"age":  26.3,
 			},
 		})
 	})
