@@ -17,7 +17,7 @@ func main() {
 			"info": gin.H{
 				"name": "徐梦飞",
 				"sex":  true,
-				"like": []string{"吃饭", "觅爱", "学习", "健身"},
+				"like": []string{"吃饭", "觅爱", "学习", "健身", "冥想"},
 				"age":  25.3,
 			},
 		})
