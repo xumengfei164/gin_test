@@ -10,7 +10,7 @@ func main() {
 	server := gin.Default()
 	server.LoadHTMLGlob("template/*")
 	server.PUT("/tt", func(context *gin.Context) {
-		context.JSON(209, gin.H{"msg": "success."})
+		context.JSON(209, gin.H{"msg": "success"})
 	})
 	server.GET("/index", func(context *gin.Context) {
 		context.HTML(200, "index.html", gin.H{
