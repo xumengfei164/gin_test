@@ -10,15 +10,15 @@ func main() {
 	server := gin.Default()
 	server.LoadHTMLGlob("template/*")
 	server.PUT("/tt", func(context *gin.Context) {
-		context.JSON(209, gin.H{"msg": "success"})
+		context.JSON(209, gin.H{"msg": "success."})
 	})
 	server.GET("/index", func(context *gin.Context) {
 		context.HTML(200, "index.html", gin.H{
 			"info": gin.H{
 				"name": "徐梦飞",
 				"sex":  true,
-				"like": []string{"吃饭", "觅爱", "学习", "健身", "冥想"},
-				"age":  25.3,
+				"like": []string{"吃饭", "觅爱", "学习", "健身", "冥想", "疯了"},
+				"age":  26.3,
 			},
 		})
 	})
